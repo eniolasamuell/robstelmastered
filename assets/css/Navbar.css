@@ -1,0 +1,45 @@
+.ms-1 {
+  margin-left: 0.25rem !important;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+@media (min-width: 992px) {
+  .py-lg-0 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+}
+
+#mainNav {
+  background: #ffffff;
+}
+
+.navbar-toggler {
+  background: var(--bs-body-color);
+}
+
+#navbarResponsive {
+  background: var(--bs-primary);
+}
+
+span {
+  color: #ffffff;
+}
+
+.container {
+}
+
+span {
+}
+
+#navbarResponsive {
+}
+

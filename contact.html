@@ -38,21 +38,39 @@ We believe that healthcare should come with a compassionate touch, and at Robste
     <link rel="stylesheet" href="assets/css/bss-overrides.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/Navbar.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top"><img src="assets/img/ROBSTEL-removebg-preview.png" alt="..." width="109" height="24"></a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span>Menu</span><i class="fas fa-bars ms-1"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive" style="padding-left: 19px;">
+        <div class="container"><a class="navbar-brand" href="#page-top"><img src="assets/img/ROBSTEL-removebg-preview.png" alt="..." width="109" height="24"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive" id="navToggle" type="button"><span>Menu</span><i class="fas fa-bars ms-1"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="padding-left:19px;">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="sevices.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">CAREER</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav><script>
+const toggle = document.getElementById('navToggle');
+const menu = document.getElementById('navbarResponsive');
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+</script><style>
+.collapse {
+    display: none;
+}
+.collapse.show {
+    display: block;
+}
+</style>
     <section class="position-relative py-4 py-xl-5" style="margin-top: 91px;">
         <div class="container position-relative" style="padding-bottom: 2px;">
             <div class="row mb-5">
@@ -87,6 +105,7 @@ We believe that healthcare should come with a compassionate touch, and at Robste
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/nav-toggle.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 
